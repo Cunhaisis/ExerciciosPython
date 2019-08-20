@@ -1,0 +1,13 @@
+#Programa para calcular a area e mostrar a quantidade de tintas necessaria para pintar uma parede
+
+largura = float(input('Digite a Largura da parede:'))
+altura  = float(input('Digite a altura da parede'))
+
+area = (largura*altura)
+
+#Cada Litro de tinta pinta 2m
+
+quantTinta = (area/2)
+
+print( 'Sua parede tem a dimensão de {}x{} e a sua área é de {} m2.'.format(largura,altura, area))
+print ('A quantidade de tinta que você irá precisar para pintar essa parede é:',quantTinta, 'litros de tintas')
