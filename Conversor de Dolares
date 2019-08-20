@@ -1,0 +1,9 @@
+#Conversor de Dolares
+
+x = int (input('Digite quanto dinheiro você tem:'))
+
+valorDolar = 4.04
+
+result = (x / int(valorDolar))
+
+print ('Você pode comprar U$',result,'Dolares com esse valor' )
