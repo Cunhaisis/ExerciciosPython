@@ -1,0 +1,11 @@
+#Calcula o dobro, triplo e a Raiz quadade de um determinado número
+
+x = int (input("Digite um numero:"))
+
+dobro   = (x*2)
+triplo  = (x*3)
+raiz    = (x**1)
+
+print ('o dobro do número é:', dobro)
+print ('o triplo numero é', triplo)
+print ('A Raiz quadrada é:',raiz)
