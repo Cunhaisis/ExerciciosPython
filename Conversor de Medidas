@@ -1,0 +1,21 @@
+#Programa para converter medidas em km, hectômetro, decametro, metro, decímetro, centimentros, milimetros
+
+medida = float (input('Digite a distancia para ser convertida '))
+
+km  = (medida/1000)
+hec = (medida/100)
+dec = (medida/10)
+metro = (medida *100)
+decimetro = (medida * 10)
+centimentos = (medida*100)
+mm = (medida * 1000)
+
+print('A medida de', medida, 'em Km é:',km )
+print ('A medida de',medida, 'em hectômetro é:',hec)
+print ('A medida de', medida, 'em decametro é:', dec)
+print ('A medida de', medida, 'em metro é:', metro)
+print('A medida de', medida,'em decímetro é:', decimetro )
+print ('A medida de', medida, 'em centimetros corresponde a', centimentos,'cm')
+print('A medida de', medida,  'em milimetros corresponde a ', mm, 'mm')
+
+
