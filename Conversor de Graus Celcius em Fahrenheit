@@ -1,0 +1,7 @@
+# Conversor de Temperatura Python
+
+c = float(input('Digite a temperatura em graus Celcius: '))
+
+f = (c * 9/5) + 32
+
+print('A temperatura', c, 'Em graus fahrenheit é:',f)
