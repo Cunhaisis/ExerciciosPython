@@ -1,0 +1,10 @@
+# Programa que mostra o preço do um produto com 5% de desonconto
+
+x = float(input('Digite o valor do produto:'))
+desconto = 5
+
+preco =  (x-(x * desconto/100))
+
+print('O valor do produto com 5% de desconto é:', preco)
+
+
