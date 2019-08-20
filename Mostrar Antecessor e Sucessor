@@ -1,0 +1,8 @@
+#Programa  mostra o antecessor
+
+n = int( input ("Digite um numero:"))
+
+antecessor = (n-1)
+sucessor   = (n+1)
+
+print ('O antecessor do número que você digitou é:',antecessor,'e o sucessor é', sucessor)
