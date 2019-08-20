@@ -1,0 +1,8 @@
+# Programa para calcular o valor de aluguel de um Carro
+
+km = float(input("Digite a quantidade de Km rodados:"))
+dia = int(input("Digite a quantidade de Dias alugafos:"))
+
+valor = (km * 0.15) + (dia * 60 )
+
+print  ("O valor Total de alguel do carro para pagar é de: R$",valor)
