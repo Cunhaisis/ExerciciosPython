@@ -1,0 +1,7 @@
+# Programa que solicita um numero Real e mostra sua porção inteira
+
+import math
+
+n = float(input("Digite um numero real:"))
+
+print  ('O valor digitado foi {} e a tem a parte inteira {}'.format(n, math.trunc(n)))
