@@ -1,0 +1,12 @@
+# Programa para calcular o Seno, Cosseno e Tangente de um angulo
+
+import math
+
+ângulo = float(input('Digite o angulo que você deseja:'))
+seno = math.sin(math.radians(ângulo))
+cosseno = math.cos(math.radians(ângulo))
+tangente = math.tan(math.radians(ângulo))
+
+print ('O angulo {}, tem o SENO de {:.2f}'.format(ângulo, seno))
+print ('O angulo {}, tem o COSSENO de {:2f}'.format(ângulo,cosseno))
+print ( 'o angulo {}, tem a Tangente {:2f}'.format(ângulo,tangente))
