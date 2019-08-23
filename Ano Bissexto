@@ -1,0 +1,10 @@
+# Faça um programa que leia um ano qualquer é mostre se ele é Bissexto
+
+ano  = int (input('Digite um ano para saber se ele é bixesto:'))
+
+reposta = (ano % 4)
+
+if (reposta == 0):
+    print('O ano {} é Bissexto:'.format(ano))
+else:
+    print ('O ano {} não é Bissexto:'.format(ano))
