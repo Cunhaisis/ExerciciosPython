@@ -1,0 +1,17 @@
+# Programa que calcula o valor do salario liquido baseado no valor hora e quantida de horas trabalhadas 
+
+valorhora = float(input('Quanto você ganha por hora?:'))
+horas     = int (input('Quantas horas você trabalhou esse mês: '))
+
+salariobruto = (valorhora * horas)
+ir =  (salariobruto * 11)/100
+inss  = (salariobruto * 8)/100
+desSindicato = (salariobruto * 5)/100
+descontos =  (ir + inss + desSindicato)
+salarioliquido = (salariobruto - descontos )
+
+print  ('+ Salário Bruto: R$ {}'.format(salariobruto))
+print  ('-  IR (11 %): R$ {}'.format(ir))
+print  ('- INSS (8%): R${}'.format(inss))
+print  ('- Sindicato (5%) R$ {}'.format(desSindicato))
+print  ('Salário Liquido:  R${:.4f}'.format(salarioliquido))
