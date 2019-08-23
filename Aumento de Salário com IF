@@ -1,0 +1,10 @@
+# Programa para calcular o auemento de salário de um funcionário
+
+valor = float(input('Qual o valor do seu salário:'))
+
+if valor > 1250:
+    aumento = valor + (valor * 10) /100
+    print  ('O valor do seu salário é {}'.format(aumento))
+else:
+    aumento =  valor + (valor * 15) / 100
+    print('O valor do seu salário é {}'.format(aumento))
