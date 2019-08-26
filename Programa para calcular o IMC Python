@@ -1,0 +1,14 @@
+# Programa para calcular o IMC
+
+
+nome    = str (input('Qual o seu nome ? '))
+idade   = int (input('Qula a sua idade'))
+altura  = float (input('Qual a sua altura ?'))
+peso    = float(input('Qual o seu peso ?'))
+
+imc = (peso / altura ** 2)
+ano = (2019 - idade )
+
+print (nome, 'você tem', idade,'anos, {:.2f} de altura e pesa {:.2f} kg '.format(altura,peso))
+print (nome,'o seu IMC é de: {:.2f}'.format(imc))
+print (nome,'Nasceu em ',ano)
