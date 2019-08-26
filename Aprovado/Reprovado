@@ -1,0 +1,15 @@
+#Faça um programa para a leitura de duas notas parciais de um aluno. O programa deve calcular a média alcançada por aluno
+# e apresentar:
+# A mensagem "Aprovado", se a média alcançada for maior ou igual a sete;
+#A mensagem "Reprovado", se a média for menor do que sete;
+#A mensagem "Aprovado com Distinção", se a média for igual a dez.
+
+nome = str(input('Qual o nome do Aluno:'))
+nota = float(input('Qual a nota do Aluno?'))
+
+if nota >= 7:
+    print('O Aluno {}, esta aprovado com a nota {}'.format(nome,nota))
+elif nota < 7:
+    print('O aluno {}, esta reprovado com a nota {}'.format(nome,nota))
+elif nota == 10:
+    print('O Aluno {}, esta aprovado com Distinção !!!, com a nota 10'.format(nome,nota))
