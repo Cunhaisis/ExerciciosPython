@@ -1,0 +1,9 @@
+# Faça um Programa que peça dois números e imprima o maior deles.
+
+num = int(input('Digite um numero qualquer:'))
+num2 = int(input('Digite um numero qualquer:'))
+
+if num > num2:
+    print('O numero {} é maior que o numero {}'.format(num,num2))
+elif num2 > num:
+    print('O numero {} é maior que o numero {}'.format(num2,num))
