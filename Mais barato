@@ -1,0 +1,15 @@
+# Faça um programa que pergunte o preço de três produtos e informe qual produto você deve comprar, sabendo que a decisão é
+# sempre pelo mais barato.
+
+valor1 = float(input('Qual o valor do 1° produto?'))
+valor2 = float(input('Qual o valor do 2° produto?'))
+valor3 = float(input('Qual o valor do 3° produto?'))
+
+barato = valor1
+
+if valor2<valor1 and valor2 < valor3:
+    barato = valor2
+if valor3<valor1 and valor3 < valor2:
+    barato = valor3
+print('O produto mais barato é o:',barato)
+
