@@ -1,0 +1,21 @@
+# Faça um Programa que leia três números e mostre-os em ordem decrescente.
+
+
+a = int (input('Digite o 1° numero:'))
+b = int (input('Digite o 2° numero:'))
+c = int (input('Digite o 3° numero:'))
+
+if c > b:
+    aux  = c
+    c    = b
+    b    = aux
+if b > a:
+    aux = b
+    b   = a
+    a   = aux
+if  c   > b:
+    aux = c
+    c   = b
+    b   = aux
+
+print('A ordem decrescente dos numeros é',a,b,c)
