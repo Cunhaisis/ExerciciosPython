@@ -1,0 +1,20 @@
+# Faça um Programa que leia três números e mostre o maior e o menor deles.
+
+a = int(input('Digite o 1° numero:'))
+b = int(input('Digite o 2° numero:'))
+c = int(input('Digite o 3° numero:'))
+
+menor = a
+if b < a and b < c:
+    menor = b
+if c < a and c < b:
+    menor = c
+# Verifica o maior
+
+maior =  a
+if b >  a and b > c:
+    maior = b
+if c > a and c > b:
+    maior =c
+print('O maior numero é:', maior)
+print('O menor numero é:', menor)
