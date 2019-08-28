@@ -1,0 +1,10 @@
+#Faça um programa que peça uma nota, entre zero e dez. Mostre uma mensagem caso o valor seja inválido e continue pedindo
+# até que o usuário informe um valor válido.
+
+x = int (input('Digite um numero entre 0 e 10:'))
+
+while x > 10:
+    print ('Valor invalido, digite um numero entre 0 e 10')
+    x = int(input('Digite um numero entre 0 e 10:'))
+if x <= 10:
+    print ('Acabou')
