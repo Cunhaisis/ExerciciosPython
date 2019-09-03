@@ -1,0 +1,11 @@
+#Faça um programa que leia 5 números e informe o maior número.
+
+
+lista = []
+contador = 0
+
+while contador < 5:
+    lista.append (input('Digite um numero:'))
+    contador = contador + 1
+print('Obrigada!!!')
+print ('O maior numero entre os 5 digitados é:', max(lista))
