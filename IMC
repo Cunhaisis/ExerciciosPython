@@ -7,17 +7,17 @@ altura = float((input('Digite a sua altura em metros:')))
 IMC = peso / (altura * altura)
 
 if IMC < 18.5:
-    print('O seu IMC é de: {}'.format(IMC))
+    print('O seu IMC é de: {:.2f}'.format(IMC))
     print('Magresa  Grau de Obesidade 0')
 if IMC > 18.5 and IMC < 24.9:
-    print('O seu IMC é de: {}'.format(IMC))
+    print('O seu IMC é de: {:.2f}'.format(IMC))
     print('NORMAL  Grau de Obesidade 0')
 if IMC > 25 and IMC < 29.9:
-    print('O seu IMC é de: {}'.format(IMC))
+    print('O seu IMC é de: {:.2f}'.format(IMC))
     print('SOBREPESO  Grau de Obesidade I')
 if IMC > 30 and IMC < 39.9:
-    print('O seu IMC é de: {}'.format(IMC))
+    print('O seu IMC é de: {:.2f}'.format(IMC))
     print('OBESIDADE  Grau de Obesidade II')
 elif IMC > 40:
-    print('O seu IMC é de: {}'.format(IMC))
+    print('O seu IMC é de: {:.2f}'.format(IMC))
     print('OBESIDADE GRAVE  Grau de Obesidade III')
