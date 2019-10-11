@@ -8,7 +8,7 @@ class App(QMainWindow):
         self.cw = QWidget()
         self.grid = QGridLayout(self.cw)
 
-        self.btn = QPushButton('aperta aqui meu Anjo')
+        self.btn = QPushButton('Botão')
         self.btn.setStyleSheet('font-size: 40px;')
         self.grid.addWidget(self.btn, 0, 0, 1, 1)
 
@@ -18,7 +18,7 @@ class App(QMainWindow):
         self.setCentralWidget(self.cw)
     def acao(self):
         print('Olá Mundo!')
-       
+
 if __name__ == '__main__':
     qt = QApplication(sys.argv)
     app = App()
