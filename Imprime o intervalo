@@ -1,0 +1,7 @@
+# Faça um programa que receba dois números inteiros e gere os números inteiros que estão no intervalo compreendido por eles.
+
+x = int(input('Digite o 1° numero:'))
+y = int(input('Digite o 2° numero:'))
+
+for c in range (x,y):
+    print(c)
