@@ -1,8 +1,10 @@
-# Programa para mostrar o peso ideal baseado na altura de uma pessoa
 
+altura = float (input('Digite a sua altura para saber seu peso ideal:'))
+s =  str(input('Qual o seu Sexo:'))
 
-altura = float(input('Digite a sua altura para saber o seu peso ideal:'))
-
-peso =  (72.7 * altura) - 58
-
-print ('Seu peso ideal é {:.2f}'. format(peso))
+if  s == 'F':
+    peso = 62.1 * altura - 44.7
+    print ('O seu peso ideal é: {:.2f}'.format(peso))
+else:
+    peso = 72.7 * altura - 58
+    print('O seu peso ideal é: {:.2f}'.format(peso))
