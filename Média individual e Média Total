@@ -1,0 +1,16 @@
+# Criar um algoritimo que receba duas notas de 10 alunos e calcule a média para cada um deles e exiba a média individual
+# e a media total
+
+soma = 0
+media = 0
+total = 0
+
+for r in range(10):
+    nota1 = float (input('Digite a 1 ° nota do ' + str (r + 1) + ' Aluno '))
+    nota2 = float(input('Digite a 2° nota do ' + str(r + 1) + ' Aluno  '))
+    media = (nota1 + nota2) / 2
+
+    print('A media das notas do alunos é : {}'.format(media))
+    soma = soma + r
+    total = total + media
+    print('A media das notas dos 10 alunos é : {}'.format(total))
