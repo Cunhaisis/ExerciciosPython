@@ -1,0 +1,13 @@
+# Criar um algoritimo que recena N numeros e contar quantos destes números são pares
+
+pares = 0
+impares = 0
+
+for r in range(10):
+    x = int((input('Digite um valor:')))
+    if x % 2 == 0:
+        pares = pares + 1
+    if x % 2 != 0:
+        impares  = impares + 1
+
+print('Dos numeros digitados {} são pares e {} são impares'.format(pares,impares))
