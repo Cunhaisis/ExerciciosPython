@@ -1,0 +1,24 @@
+#As Organizações Tabajara resolveram dar um aumento de salário aos seus colaboradores e lhe contraram para desenvolver o
+# programa que calculará os reajustes.
+
+salário = float (input('Qual o valor do seu salário ?'))
+
+if salário <= 280:
+    reajuste = 20
+    aumento = (salário * reajuste)/100
+if salário > 280 and salário < 700:
+    reajuste = 15
+    aumento = (salário * reajuste)/ 100
+if salário > 700 and salário < 1500:
+    reajuste = 10
+    aumento = (salário * reajuste)/ 100
+elif salário > 1500:
+    reajuste = 5
+    aumento =  (salário * reajuste  )/ 100
+print('Valor do salário antes do reajuste R$ {}'.format(salário))
+print('A porcentagem do seu reajuste foi',reajuste, '%')
+print('O valor do seu auemento foi R$', aumento)
+print('O valor do seu salário com reajuste R$ ',salário + aumento)
+
+
+
