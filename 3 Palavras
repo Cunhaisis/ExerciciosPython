@@ -1,0 +1,12 @@
+# Crie um algoritmo que leia três palavras, separadamente, e as apresenta na tela na ordem contrária em que foram
+# digitadas, separadas por espaço.
+
+
+lista = []
+for r in range (3):
+    lista.append((input('Digite a ' + str(r + 1) + '° palavra:\n')))
+
+
+
+lista.reverse()
+print(lista)
