@@ -1,0 +1,13 @@
+#A	prefeitura	de	Rio	dos	Grilos	abriu	uma	linha	de	crédito	para	os	funcionários.	O	valor	máximo	da
+# prestação	não	poderá	ultrapassar	30%	do	salário	bruto.	Fazer	um	algoritmo	que	permita	entrar	com	o
+# salário	bruto	e	o	valor	da	prestação	e	informar	se	o	empréstimo	pode	ou	não	ser	concedido.
+
+salario = float(input('Qual o valor do salário:'))
+prestacao = float(input('Qual o valor da prestação:'))
+
+
+if prestacao > salario*30/100:
+    print('Você não pode solicitar o emprestimo')
+
+else:
+    print('Você pode solicitar o emprestimo!')
