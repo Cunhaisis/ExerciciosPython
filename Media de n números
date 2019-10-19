@@ -1,0 +1,12 @@
+# Crie um algoritimo que calcule a media aritimetica de N valores numericos lidos
+
+x  =  int(input('Digite uma numero:'))
+soma = 0
+media = 0
+
+for r in range(1, x):
+    soma = soma + r
+    media = soma / r
+    
+
+    print('A media dos numeros no intervalo de 1 ate {} é : {}'.format(x,media))
