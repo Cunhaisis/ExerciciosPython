@@ -1,0 +1,14 @@
+# Crias um algoritimo que receba 10 números e contE quantos números são múltiplos de 3 e quantos não são.
+
+
+multiplos = 0
+nMultiplos = 0
+
+for r in range(10):
+    x = int((input('Digite um valor:')))
+    if x % 3 == 0:
+        multiplos = multiplos + 1
+    if x % 3 != 0:
+        nMultiplos  = nMultiplos + 1
+
+print('Dos numeros digitados {} são multiplos de 3 e {} são não são multiplos de 3 '.format(multiplos,nMultiplos))
