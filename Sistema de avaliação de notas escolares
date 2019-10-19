@@ -1,0 +1,28 @@
+''' Criar um algoritmo que receba duas notas de 60 alunos e calcule a média aritimetica para cada aluno, Exiba quantos estão
+aprovdos, quantos estão reprovados e quantos estão de exame, levando em consideração as condições abaixo
+Aprovado: média maior ou igual a 7 pontos
+
+reprovado: méida menor que 4 pontos
+
+Exame:  Média entre 4 e 6
+
+'''
+soma = 0
+media = 0
+total = 0
+aprovado = 0
+reprovado = 0
+exame = 0
+
+for r in range(60):
+    nota1 = float (input('Digite a 1 ° nota do ' + str (r + 1) + ' Aluno '))
+    nota2 = float (input('Digite a 2° nota do  ' + str(r + 1) +  ' Aluno'))
+    if (nota1 + nota2) / 2 >= 7:
+        aprovado = aprovado + 1
+    if (nota1 + nota2) / 2 < 3:
+        reprovado =  reprovado + 1
+
+    if  (nota1 + nota2 ) / 2 >= 4 and (nota1 / nota2) / 2 <= 6.9:
+        exame =  exame + 1
+
+        print('Nessa escola {} forma aprovados, {} foram reprovados e {} ficaram de exame'.format(aprovado,reprovado,exame))
