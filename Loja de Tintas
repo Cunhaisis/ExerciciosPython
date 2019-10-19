@@ -1,0 +1,10 @@
+# Programa para saber o valor total gasto em tintas baseados no mentros
+
+metros = float(input('Quantos metros quadrados você vai pintar ? '))
+
+quantTintas = ( metros / 3) #Para saber a quantidade de tintas em litros
+preçoTotal  = (quantTintas / 18)* 80.00
+
+print ('Você vai precisar de {:.2f} latas de tintas'.format(quantTintas))
+print ('Você vai gastar R$ {:.2f}'. format(preçoTotal))
+
