@@ -1,0 +1,9 @@
+#Programa que verifica a idade do usuário e informa que se pode ou não solicitar
+
+nome    =  str (input('Qual o seu nome?'))
+idade   =  int(input('Qual a sua idade?'))
+
+if idade <= 17:
+    print (nome,'Você não de pode solicitar um emprestimo porque tem menos do que 18 anos.')
+elif idade > 18:
+    print (nome,'Você pode solicitar um emprestimo porque tem mais do que 18 anos')
