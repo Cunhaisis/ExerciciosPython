@@ -1,0 +1,27 @@
+''' Uma fruteira está vendendo frutas com a seguinte tabela de preços:
+                       Até 5 Kg           Acima de 5 Kg
+Morango         R$ 2,50 por Kg          R$ 2,20 por Kg
+Maçã            R$ 1,80 por Kg          R$ 1,50 por Kg
+
+Se o cliente comprar mais de 8 Kg em frutas ou o valor total da compra ultrapassar R$ 25,00, receberá ainda um desconto
+de 10% sobre este total. Escreva um algoritmo para ler a quantidade (em Kg) de morangos e a quantidade (em Kg) de maças
+adquiridas e escreva o valor a ser pago pelo cliente.'''
+
+
+morango =  float(input('Quantos kilos de Morango ?'))
+maca    =  float(input('Quantos kilos de Maça?'))
+
+if morango < 5 and maca < 5:
+    preco =  morango * 2.50
+    preco2 = maca    * 1.80
+    print('O valor total da sua compra é R$: {:.2f} por {} kg de Morangos e  {:.2f} por {} kg de Maças'.format(preco,morango,preco2,maca))
+
+if morango > 5 and maca > 5:
+    preco = morango * 2.20
+    preco2 = maca   * 1.50
+    print('O valor total da sua compra é R$: {:.2f} por {} kg de Morangos e  {:.2f} por {} kg de Maças'.format(preco, morango,preco2,maca))
+
+if morango > 8 and maca > 8 or preco > 25 and preco2 > 25:
+    soma = preco2 + preco
+    total = soma - (soma * 10 )/ 100
+    print('O valor da sua compra é de R$: {:.2f}'.format(total))
