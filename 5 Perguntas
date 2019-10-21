@@ -1,0 +1,37 @@
+'''Faça um programa que faça 5 perguntas para uma pessoa sobre um crime. As perguntas são:
+"Telefonou para a vítima?"
+"Esteve no local do crime?"
+"Mora perto da vítima?"
+"Devia para a vítima?"
+"Já trabalhou com a vítima?" O programa deve no final emitir uma classificação sobre a participação da pessoa no crime.
+ Se a pessoa responder positivamente a 2 questões ela deve ser classificada como "Suspeita", entre 3 e 4 como "Cúmplice"
+e 5 como "Assassino". Caso contrário, ele será classificado como "Inocente".'''
+
+contador = 0
+
+a = str(input('Você telefonou para a vítima ?'))
+if a == 'sim':
+    contador = contador + 1
+b = str(input('Você esteve no local do crime ?'))
+if b == 'sim':
+    contador = contador + 1
+
+c = str(input('Você mora perto da vítima ?'))
+if c == 'sim':
+    contador = contador + 1
+d = str(input('Você devia para a vítima ?'))
+if d == 'sim':
+    contador = contador + 1
+e = str(input('Já trabalhou para a vítima ?'))
+if e == 'sim':
+    contador = contador + 1
+
+if contador == 2:
+    print('Classificação: Suspeita')
+
+if contador >= 3 and contador <= 4:
+    print('Classificação: Cúmplice')
+if contador == 5:
+    print('Classificação: Assassino')
+else:
+    print('Classificação: Inocente')
