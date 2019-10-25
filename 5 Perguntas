@@ -5,7 +5,7 @@
 "Devia para a vítima?"
 "Já trabalhou com a vítima?" O programa deve no final emitir uma classificação sobre a participação da pessoa no crime.
  Se a pessoa responder positivamente a 2 questões ela deve ser classificada como "Suspeita", entre 3 e 4 como "Cúmplice"
-e 5 como "Assassino". Caso contrário, ele será classificado como "Inocente".'''
+  e 5 como "Assassino". Caso contrário, ele será classificado como "Inocente".'''
 
 contador = 0
 
@@ -19,9 +19,11 @@ if b == 'sim':
 c = str(input('Você mora perto da vítima ?'))
 if c == 'sim':
     contador = contador + 1
+
 d = str(input('Você devia para a vítima ?'))
 if d == 'sim':
     contador = contador + 1
+
 e = str(input('Já trabalhou para a vítima ?'))
 if e == 'sim':
     contador = contador + 1
@@ -29,9 +31,11 @@ if e == 'sim':
 if contador == 2:
     print('Classificação: Suspeita')
 
-if contador >= 3 and contador <= 4:
+if contador == 3 or contador == 4:
     print('Classificação: Cúmplice')
-if contador == 5:
+if contador == 5 :
     print('Classificação: Assassino')
-else:
-    print('Classificação: Inocente')
+
+if contador < 2:
+    
+    print('Classificação: Inocente ')
