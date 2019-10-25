@@ -1,0 +1,9 @@
+'''Faça um programa que pergunte quanto você ganha por hora e o número de horas trabalhadas no mês.
+Calcule e mostre o total do seu salário no referido mês'''
+
+hora  = float(input('Qunato você ganha por horas trabalhadas ?'))
+quantHoras= float(input('Quantas horas você trabalhou ?'))
+
+salario =  hora * quantHoras
+
+print('O valor total do seu Salário é R$ {:.2f}'.format(salario))
