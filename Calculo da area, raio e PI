@@ -1,0 +1,9 @@
+# Efetue o cálculo da área, elevando o valor de raio ao quadrado e multiplicando por π.
+
+n = 3.14159
+x  =  float (input('Digite um valor para calcular sua area:'))
+
+
+area = n * (x ** 2)
+
+print('A area do raio é {:.4f} : '.format(area))
