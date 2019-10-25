@@ -1,0 +1,9 @@
+# Faça um programa que calcule a área de um quadrado, em seguida mostre o dobro desta área para o usuário.
+
+lado = float (input('Qual o lado do Qunadrado ?'))
+
+area = lado**2
+dobro = area * 2
+
+print(area)
+print('O dobro da area desse quadrado é  {:.2f}'.format(dobro))
