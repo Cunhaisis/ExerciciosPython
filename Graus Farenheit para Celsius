@@ -1,0 +1,8 @@
+# Faça um programa que peça a temperatura em graus Farenheit, transforme e mostre a temperatura em graus Celsius.
+# C = (5 * (F-32) / 9)
+
+graus = float((input('Digite a temperatura em Farenheit para converter para Celsius ')))
+
+temperatura = (5 * (graus - 32) /9)
+
+print('A temperatura em Graus Celsius é {:.2f}'.format(temperatura))
