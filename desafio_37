@@ -1,0 +1,11 @@
+opcao = int(input('Escolha uma opção para converter: 1 para binário, 2 para octal, 3 para hexadecimal: '))
+valor = int(input('Qual o valor para conveter: '))
+
+if opcao == 1:
+  print(bin(valor))
+elif opcao == 2:
+    print(oct(valor))
+elif opcao == 3:
+   print(hex(valor))
+else:
+    print('Opção invalida')
