@@ -1,0 +1,9 @@
+x =  int(input('Digite o 1° valor:'))
+y = int(input('Digite o 2° valor:'))
+
+if x > y:
+    print('{} é maior que {}'.format(x,y))
+elif y > x:
+    print('{} é maior que {}'.format(y,x))
+elif x == y or y == x:
+    print('Não exixte valor maior os dois são iguais')
