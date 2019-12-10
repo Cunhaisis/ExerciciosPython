@@ -1,0 +1,11 @@
+valorCasa = float(input('Qual o valor da casa ?'))
+salario = float(input('Qual o valor do seu salario ?'))
+quantAnos = int (input('Em quantas parcelas pretende pagar ? '))
+
+prestacao = valorCasa/quantAnos
+
+if prestacao > salario * 30/100:
+    print('Você não pode comprar essa casa')
+else:
+    print('Você poderá comprar essa casa no valor: {} em {} parcelas por esse valor de prestação{}'.
+          format(valorCasa,quantAnos,prestacao))
