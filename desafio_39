@@ -1,0 +1,18 @@
+from datetime import datetime
+
+dataNasc = int(input('Qual  ano de seu nascimento no formato: '))
+
+now = datetime.now()
+now.year
+idade  = now.year - dataNasc
+prazo  = idade - 18
+falta =  18 - idade
+
+if idade == 18:
+    print('Esta na hora de alistar')
+elif idade < 18:
+    print('Você ainda vai se alistar')
+    print('Falta {} para você se alistar'.format(falta))
+elif idade > 18:
+    print('Já passou do tempo de se alistar')
+    print('Passou {} anos para ter se alistado '.format(prazo))
